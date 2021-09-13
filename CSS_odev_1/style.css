@@ -1,0 +1,398 @@
+body {
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.logo {
+    display: block;
+    font-family: 'Heebo', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    width: 70px;
+    height: 53px;
+}
+
+.nav {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.first-section {
+    padding: 10px 55px;
+}
+
+.sec-1-1 {
+    margin-left: 17%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2D9CDB;
+}
+
+.sec-1-2 {
+    max-width: 500px;
+    margin-left: 17%;
+    font-size: 35px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 50px;
+}
+
+.sec-1-3 {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.sec-1-4 {
+    max-width: 300px;
+    margin-left: 17%;
+    font-size: 35px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 50px;
+}
+
+.sec-1-5 {
+    max-width: 400px;
+    margin-left: 17%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.sec-1-6 {
+    margin-top: 30px;
+    margin-left: 17%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.join {
+    margin-left: 17%;
+    width: 400px;
+}
+
+.join-input {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: .3rem;
+    border: none;
+    outline: none;
+    background-color: #F2F2F2;
+}
+
+.join-button {
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: .3rem;
+    background-color: #2D9CDB;
+    color: white;
+    cursor: pointer;
+}
+
+.services {
+    padding: 5% 20%;
+}
+
+.service-heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: #333333;
+    max-width: 350px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 50px;
+    gap: 30px 30px;
+}
+
+.service-card {
+    width: 25%;
+    min-width: 180px;
+    border-radius: 0.4rem;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.service-card:hover {
+    box-shadow: 3px 3px 10px 3px gray;
+    transform: scale(1.1);
+}
+
+.service-card > * + * {
+    margin-top: 40px;
+}
+
+.card-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 0.4rem;
+    background-color: #2D9CDB;
+}
+
+.green {
+    background-color: #27AE60;
+}
+
+.red {
+    background-color: #EB5757;
+}
+
+.card-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.card-button {
+    font-size: 16px;
+    width: 120px;
+    height: 50px;
+    background-color: #E0E0E0;
+    color: black;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #2D9CDB;
+    color: honeydew;
+}
+
+.design {
+    max-width: 100%;
+    padding: 50px 150px;
+}
+
+.design-heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 0;
+    width: 400px;
+}
+
+.design-photos {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.design-fig {
+    max-width: 400px;
+}
+
+.design-fig:nth-child(odd) {
+    margin-top: 100px;
+}
+
+.design-img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.design-figcap {
+    line-height: 0;
+}
+
+.design-figcap-first {
+    font-size: 12px;
+    font-weight: 300;
+    color: #828282;
+}
+
+.design-figcap-second {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.design-link {
+    display: block;
+    margin-top: -50px;
+    margin-right: 80px;
+    text-decoration: none;
+    text-align: right;
+    color: #2D9CDB;
+}
+
+.team {
+    padding: 50px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-text {
+    width: 500px;
+}
+
+.team-heading {
+    font-size: 16px;
+    font-weight: 500;
+    color: #EB5757;
+}
+
+.team-expl-1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.team-expl-2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.team-photo {
+    width: 500px;
+    
+}
+
+.team-photo img,
+.team-photos img {
+    max-width: 100%;
+    border-radius: 2rem;
+}
+
+.review {
+    padding: 50px 150px;
+    margin-bottom: 20vh;
+}
+
+.review-heading {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    max-width: 80%;
+}
+
+.reviewer-photo {
+    max-width: 100px;
+    border-radius: 1rem;
+    float: left;
+}
+
+.reviewer-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+
+.reviewer-company {
+    font-size: 15px;
+    font-weight: 500;
+    color: #828282;
+    padding-left: 120px;
+}
+
+footer {
+    background-color: #100E1D;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    height: 40vh;
+    padding-top: 30px;
+}
+
+.footer-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.footer-logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+
+.social-icon {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+.contact {
+    width: 30%;
+    color: white;
+}
+
+#contact-input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: .6rem;
+    padding-inline-start: 10px;
+    font-size: 16px;
+}
+
+.contact-button {
+    width: 80px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: .6rem;
+    background-color: #2D9CDB;
+    color: white;
+    cursor: pointer;
+}
+
+.reference {
+    font-size: large;
+    text-align: center;
+    
+}
