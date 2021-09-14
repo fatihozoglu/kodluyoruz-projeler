@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343a40;
+}
+
+header {
+    width: 100%;
+    padding: 40px 50px;
+}
+
+nav {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+a {
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    font-size: 40px;
+    padding: 100px;
+    color: #e98209;
+    text-align: center;
+}
+
+.name {
+    font-weight: 700;
+}
+
+main > p {
+    margin: 20px auto;
+}
+
+
