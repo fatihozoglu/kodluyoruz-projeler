@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>My Music Shop with Bootstrap</title>
+</head>
+
+<body style="background-color: #E9ECEF;">
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">My Music Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about_us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <div class="pt-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid">
+                <h1 class="display-5 mb-5 fw-bold text-center">My Music Shop</h1>
+                <p class="col-12 fs-4 text-center">Welcome to our online shopping website. You can find all of our
+                    products in <a href="./products.html">Products</a> page.</p>
+                <hr>
+                <div class="row">
+                    <p>Our product categories:</p>
+                    <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Guitars</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                data-bs-toggle="list" href="#list-profile" role="tab"
+                                aria-controls="list-profile">Drums</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                data-bs-toggle="list" href="#list-messages" role="tab"
+                                aria-controls="list-messages">Violins</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                data-bs-toggle="list" href="#list-settings" role="tab"
+                                aria-controls="list-settings">Flutes</a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                aria-labelledby="list-home-list">The guitar is a fretted musical instrument that
+                                typically has six strings. It is held flat against the player's body and played by
+                                strumming or plucking the strings with the dominant hand, while simultaneously pressing
+                                selected strings against frets with the fingers of the opposite hand. A plectrum or
+                                individual finger picks may be used to strike the strings. The sound of the guitar is
+                                projected either acoustically, by means of a resonant chamber on the instrument, or
+                                amplified by an electronic pickup and an amplifier.</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                aria-labelledby="list-profile-list">The drum is a member of the percussion group of
+                                musical instruments. In the Hornbostel-Sachs classification system, it is a
+                                membranophone.[1] Drums consist of at least one membrane, called a drumhead or drum
+                                skin, that is stretched over a shell and struck, either directly with the player's
+                                hands, or with a percussion mallet, to produce sound. There is usually a resonance head
+                                on the underside of the drum, typically tuned to a slightly lower pitch than the top
+                                drumhead. Other techniques have been used to cause drums to make sound, such as the
+                                thumb roll. Drums are the world's oldest and most ubiquitous musical instruments, and
+                                the basic design has remained virtually unchanged for thousands of years.[1]</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                aria-labelledby="list-messages-list">The violin, sometimes known as a fiddle, is a
+                                wooden chordophone (string instrument) in the violin family. Most violins have a hollow
+                                wooden body. It is the smallest and thus highest-pitched instrument (soprano) in the
+                                family in regular use.[a] The violin typically has four strings, usually tuned in
+                                perfect fifths with notes G3, D4, A4, E5, and is most commonly played by drawing a bow
+                                across its strings. It can also be played by plucking the strings with the fingers
+                                (pizzicato) and, in specialized cases, by striking the strings with the wooden side of
+                                the bow (col legno).</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                aria-labelledby="list-settings-list">The flute is a family of musical instruments in the
+                                woodwind group. Unlike woodwind instruments with reeds, a flute is an aerophone or
+                                reedless wind instrument that produces its sound from the flow of air across an opening.
+                                According to the instrument classification of Hornbostel–Sachs, flutes are categorized
+                                as edge-blown aerophones.[1] A musician who plays the flute can be referred to as a
+                                flute player, flautist, flutist or, less commonly, fluter or flutenist.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="text-center mb-5">
+                        <a href="./about_us.html">
+                            <button class="btn btn-primary btn-lg" type="button">About Us</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
