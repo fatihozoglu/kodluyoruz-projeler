@@ -1,0 +1,15 @@
+{
+  "name": "react_odev_1",
+  "version": "1.0.0",
+  "description": "Patika.dev react odevi",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app"
+  },
+  "author": "Fatih",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
+}
