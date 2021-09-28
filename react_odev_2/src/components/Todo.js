@@ -3,9 +3,10 @@ import React from "react";
 export default function Todo( props ) {
 
   return (
-    <div className="stack-small">
-      <div className="c-cb">
-          <input
+    <div className="list-item">
+      <div className="list">
+        <input
+            className="checkbox"
             id={props.id}
             type="checkbox"
             defaultChecked={props.completed}
@@ -14,16 +15,14 @@ export default function Todo( props ) {
           <label className="todo-label" htmlFor={props.id}>
             {props.name}
           </label>
-        </div>
-        <div className="btn-group">
-          <button
-            type="button"
-            className="btn btn__danger"
-            onClick={() => props.deleteTask(props.id)}
-          >
-            Delete
-          </button>
-        </div>
+      </div>  
+      <button
+        type="button"
+        className="delete-button"
+        onClick={() => props.deleteTask(props.id)}
+      >
+        Delete
+      </button>
     </div>
   )
 }

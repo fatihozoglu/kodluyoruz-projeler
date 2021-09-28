@@ -3,7 +3,7 @@ import React from "react";
 export default function FilterButton( props ) {
     return (
         <button type="button"
-                className="btn toggle-btn"
+                className="filter-button"
                 onClick={() => props.setFilter(props.name)}
         >
           <span>{ props.name }</span>

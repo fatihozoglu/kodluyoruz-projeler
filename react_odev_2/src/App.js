@@ -65,16 +65,16 @@ function App(props) {
   const headingText = `${taskList.length} ${tasksNoun} ${status}`;
 
   return (
-    <div className="todoapp stack-large">
-      <h1>React ToDo App</h1>
+    <div className="container">
+      <h1>todos</h1>
       <Form addTask={addTask}/>
-      <div className="filters btn-group stack-exception">
+      <div className="filter-buttons-container">
         { filterList }
       </div>
       <h2 id="list-heading">
         { headingText }
       </h2>
-      <ul className="todo-list stack-large stack-exception">
+      <ul className="todo-list">
         { taskList }
       </ul>
     </div>
