@@ -1,6 +1,6 @@
-# Kodluyoruz İlk Repo
-[Kodluyoruz](https://www.kodluyoruz.org) eğitimleri kapsamında açtığım ilk repo. Icerisinde bir adet README.md dosyasi ve bir adet index.html dosyasi bulunmakta.
-![Proje Resmi](/images/github.png)
+# Kodluyoruz Projeler Reposu
+[Kodluyoruz](https://www.kodluyoruz.org) eğitimleri kapsamında açtığım ilk repo. Içerisinde [Patika.dev Front End Web Development Patikası](https://app.patika.dev/egitimler/frontend-web-development-patikasi) kapsamında tamamlamış olduğum HTML, CSS, Bootstrap, Javascript, Veri Yapılari ve Algoritmalar, ReactJS kapsamında projeler bulunmaktadır.
+
 ##  Installation
 Önceki projeyi klonlayin
 `git clone https://github.com/fatihozoglu/kodluyoruzilkrepo.git`
