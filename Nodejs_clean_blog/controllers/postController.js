@@ -4,10 +4,10 @@ const Post = require("../models/Post");
 exports.createPost = async (req, res) => {
   try {
     await Post.create(req.body);
+    res.redirect("/");
   } catch (err) {
     console.log(err.message);
   }
-  res.redirect("/");
 };
 // Update Post
 exports.editPost = async (req, res) => {
@@ -21,12 +21,9 @@ exports.editPost = async (req, res) => {
           author: req.body.author,
           content: req.body.content,
         },
-      },
-      (err) => {
-        if (err) console.log(err.message);
-        else res.redirect(`/posts/${req.params.id}`);
       }
     );
+    res.redirect(`/posts/${req.params.id}`);
   } catch (err) {
     console.log(err.message);
   }
@@ -34,10 +31,8 @@ exports.editPost = async (req, res) => {
 // Delete Post
 exports.deletePost = async (req, res) => {
   try {
-    await Post.deleteOne({ _id: req.params.id }, (err) => {
-      if (err) console.log(err.message);
-      else res.redirect("/");
-    });
+    await Post.deleteOne({ _id: req.params.id });
+    res.redirect("/");
   } catch (err) {
     console.log(err.message);
   }
@@ -46,6 +41,7 @@ exports.deletePost = async (req, res) => {
 exports.getAllPosts = async (req, res) => {
   try {
     const posts = await Post.find();
+    console.log(posts);
     res.render("index", {
       posts,
     });
