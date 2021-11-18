@@ -38,13 +38,20 @@ app.get("/add_post", (req, res) => {
   res.render("add_post");
 });
 
-// Individual Pages for each Post
-app.get("/post", (req, res) => {
-  res.render("post");
+// Individual Post Pages for each Blog Post
+app.get("/posts/:id", async (req, res) => {
+  try {
+    const selectedPost = await Post.findById(req.params.id);
+    res.render("post", {
+      selectedPost,
+    });
+  } catch (err) {
+    console.log(err.message);
+  }
 });
 
 // Route for getting the data sent from Add Post Form
-app.post("/posts", async (req, res) => {
+app.post("/add_post", async (req, res) => {
   try {
     await Post.create(req.body);
   } catch (err) {
