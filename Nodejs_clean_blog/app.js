@@ -1,6 +1,6 @@
 const express = require("express");
-const Post = require("./models/Post");
 const mongoose = require("mongoose");
+const postController = require("./controllers/postController");
 
 const app = express();
 
@@ -16,49 +16,23 @@ app.use(express.urlencoded({ extended: true }));
 // Using express.json() midlleware to get the data and parse it as json
 app.use(express.json());
 
+// Create Post
+app.post("/add_post", postController.createPost);
+// Edit Post
+app.post("/edit_post/:id", postController.editPost);
+// Delete Post
+app.get("/delete_post/:id", postController.deletePost);
+
 // Home Page
-app.get("/", async (req, res) => {
-  try {
-    const posts = await Post.find();
-    res.render("index", {
-      posts,
-    });
-  } catch (err) {
-    console.log(err.messsage);
-  }
-});
-
+app.get("/", postController.getAllPosts);
 // About Page
-app.get("/about", (req, res) => {
-  res.render("about");
-});
-
+app.get("/about", postController.getAboutPage);
 // Add Post Page
-app.get("/add_post", (req, res) => {
-  res.render("add_post");
-});
-
-// Individual Post Pages for each Blog Post
-app.get("/posts/:id", async (req, res) => {
-  try {
-    const selectedPost = await Post.findById(req.params.id);
-    res.render("post", {
-      selectedPost,
-    });
-  } catch (err) {
-    console.log(err.message);
-  }
-});
-
-// Route for getting the data sent from Add Post Form
-app.post("/add_post", async (req, res) => {
-  try {
-    await Post.create(req.body);
-  } catch (err) {
-    console.log(err.message);
-  }
-  res.redirect("/");
-});
+app.get("/add_post", postController.getAddPostPage);
+// Post Page
+app.get("/posts/:id", postController.getPostPage);
+// Edit Page
+app.get("/posts/edit/:id", postController.getEditPage);
 
 app.listen(8080, () => {
   console.log("Sunucu 8080 Portunda başlatıldı.");

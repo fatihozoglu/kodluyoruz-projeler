@@ -29,6 +29,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <p><%= selectedPost.content %></p>
+          <a href="/posts/edit/<%= selectedPost._id %>" class="btn btn-primary" >Edit</a>
+          <a href="/delete_post/<%= selectedPost._id %>" class="btn btn-danger" >Delete</a>
         </div>
       </div>
     </div>
