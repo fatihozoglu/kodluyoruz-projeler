@@ -1,5 +1,5 @@
 # Kodluyoruz Projeler Reposu
-[Kodluyoruz](https://www.kodluyoruz.org) eğitimleri kapsamında açtığım ilk repo. Içerisinde [Patika.dev Front End Web Development Patikası](https://app.patika.dev/egitimler/frontend-web-development-patikasi) kapsamında tamamlamış olduğum HTML, CSS, Bootstrap, Javascript, Veri Yapılari ve Algoritmalar, ReactJS kapsamında projeler bulunmaktadır.
+[Kodluyoruz](https://www.kodluyoruz.org) eğitimleri kapsamında açtığım ilk repo. Içerisinde [Patika.dev Front End Web Development Patikası](https://app.patika.dev/egitimler/frontend-web-development-patikasi) ve [Node.js ile Back-End Patikası](https://app.patika.dev/egitimler/nodejs-ile-backend-patikasi) kapsamında tamamlamış olduğum HTML, CSS, Bootstrap, Javascript, Veri Yapılari ve Algoritmalar, ReactJS ve Node.js projeleri bulunmaktadır.
 
 ##  Installation
 Önceki projeyi klonlayin
